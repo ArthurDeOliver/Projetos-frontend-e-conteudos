@@ -1,0 +1,186 @@
+/* body */
+
+/* do body todos os elementos sem excessão setar uma margin e padding  */
+/* página sem bordas */
+body *{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    margin: 0;
+    background-color: #cccc;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-width: 600px;
+    max-width: 1860px;
+}
+
+.conteudo{
+    width: 60%;
+    margin: auto;
+    
+}
+
+.div_cabecalho{
+    width: 80%;
+    margin: auto;
+
+}
+
+/* header */
+
+/* imagem background */
+.back_imagem{
+    /* margin: 0; */
+    /* chamada da imagem */
+    background-image: url(imagens/bg-3.jpg);
+    /* imagem abrange todo o espaço */
+    background-size: cover;
+    /* imagem ao centro do espaço a qual se encontra */
+    background-position: right center;
+    /* altura da imagem */
+    height: 500px;
+    
+}
+
+/* tornando a lista os botões */
+ul{
+    /* a lista possui um valor default de margin, podemos tirar essa margem para ficar mais clean a página */
+    /* margin: 0; */
+    /* padding-left: 15px; */
+    margin-bottom: 100px;
+    text-align: right;
+    
+}
+
+ul li{
+    margin-top: 50px;
+    margin-left: 15px;
+    display: inline-block;
+    
+}
+
+/* caracteristicas dos botoes */
+.botao{
+    /* estilo da marcação da lista, número romano, alfabeto por exemplo para ordenadas, para não ordenadas: bolinha, quadrado, etc */
+    list-style-type: none;
+    text-transform: uppercase;
+    /* área clicável */
+    padding: 15px 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.363);
+    border: 2px solid white;
+    text-decoration: none;
+}
+
+.botao:visited{
+    color: white;
+}
+
+.botao:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* texto cabeçalho */
+.titulo_cabecalho{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    /* sombra da letra */
+    text-shadow: 2px 2px 2px black;
+}
+
+.p_cabecalho{
+    /* tornando ele um elemento central com uma largura menor */
+    margin: auto;
+    width: 40%;
+    text-align: center;
+    padding: 12px;
+    /* cores */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.363);
+    border-bottom: 2px white solid;
+
+}
+
+/* conteudo main */
+
+.p_conteudo{
+    text-align: justify;
+}
+
+.conteudo_main{
+    margin-top: 15px;
+}
+/* margem do bloco inteiro em relação ao header */
+.conteudo{
+    /* tag conteudo é o pai, o com maior "poder" */
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+/* características da divisão do conteúdo como um todo */
+.conteudo_div{
+    /* por conta da tag pai, conteudo_div se torna meio que filho, respeitando os limites que foram colocados na tag pai, até ultrapassar */
+    margin-top: 15px;
+    background-color: white;
+    padding: 10px;
+}
+
+/* características do bloco onde fica o texto do título */
+.conteudo_header{
+    background-color: rgb(235, 234, 234);
+    border-bottom: 2px darkgray solid;
+    padding: 5px;
+}
+
+/* características do título */
+.titulo_conteudo{
+    margin: 5px 10px 5px 10px;
+}
+
+.conteudo_nav{
+    margin-top: 25px;
+    margin-bottom: 10px;
+
+    /* colocar o link para a direita */
+    /* display: block;
+    text-align: right; */
+
+    /* width: fit-content; 
+    propriedade do width que se ajusta ao conteúdo de dentro dele*/
+}
+
+.link_NAV{
+    border-radius: 5px;
+    background-color: rgb(204, 203, 203);
+    padding: 10px;
+}
+
+.link_NAV:visited{
+    color: blue;
+
+}
+
+/* rodape */
+.rodape_pagina{
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+    background-color: rgb(116, 116, 116);
+}
+
+.p_rodape{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* obg: da para otimizar tempo e não precisar nomear todas as tags 
+o que é melhor e mais otimizado é usar a separação delas com: 
+ul li{} por exemplo, selecionar de todas as ul os itens li, isso se
+aplicar em todas as tags e podemos fazer algo mais geral sem ter que 
+usar mais linhas de documento para isso. */
