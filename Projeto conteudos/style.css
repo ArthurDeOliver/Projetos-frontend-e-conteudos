@@ -52,7 +52,7 @@ h1{
     border-bottom: 2px solid white;
     padding: 15px;
     color: white;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
 }
 
 section{
@@ -62,7 +62,6 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
     justify-content: space-around;
     gap: 16px;
 }
